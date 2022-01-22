@@ -3,23 +3,65 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: white;
+  color: black;
 }
 
 body {
-  background: radial-gradient(blue, green);
+  background-color: rgb(207, 207, 207);
+}
+.btnPanel {
+  display: flex;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+  width: 30%;
+}
+
+.btnCont {
+  margin: 5px;
+}
+
+.btn {
+  font-size: 20px;
+  background: none;
+  border: black solid 2px;
+  border-radius: 10px;
+  outline: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 10px;
+}
+.digitHolder {
+  text-align: center;
+}
+.highlight {
+  color: red;
 }
 
 /* Header */
 header {
   text-align: center;
   padding-top: 40px;
+  border-bottom: solid 2px rgb(0, 162, 255);
 }
 
 header h1 {
   font-weight: lighter;
   letter-spacing: 0.3em;
   height: 10vh;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar li {
+  list-style-type: none;
+  font-size: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
 }
 
 /* Counter */
@@ -30,29 +72,10 @@ header h1 {
   align-items: center;
   justify-content: center;
   height: 80vh;
+  flex-wrap: wrap;
 }
 
 .digit {
   font-size: 80px;
   font-weight: lighter;
-}
-.btnPanel {
-  display: flex;
-}
-
-.btn {
-  margin: 10px;
-}
-
-.reset,
-.inc,
-.dec {
-  font-size: 20px;
-  background: none;
-  border: white solid 2px;
-  border-radius: 10px;
-  outline: none;
-  text-transform: uppercase;
-  cursor: pointer;
-  padding: 10px;
 }
